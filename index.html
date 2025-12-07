@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TasteBite Restaurant</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: #f5f5f5;
+            scroll-behavior: smooth;
+        }
+
+        /* Navigation */
+        .navbar {
+            background: #d62828;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 10;
+        }
+
+        .navbar h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-links a {
+            color: white;
+            margin-left: 20px;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .nav-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero (Home) Section */
+        .hero {
+            background: url('https://images.unsplash.com/photo-1600891964092-4316c288032e') no-repeat center/cover;
+            height: 70vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 10px black;
+            font-size: 40px;
+            font-weight: bold;
+            margin-top: 60px;
+        }
+
+        /* About Section */
+        .about {
+            padding: 50px;
+            background: white;
+            text-align: center;
+        }
+
+        .about h2 {
+            color: #d62828;
+            font-size: 32px;
+        }
+
+        .about p {
+            width: 80%;
+            margin: auto;
+            font-size: 18px;
+            color: #444;
+            line-height: 1.6;
+        }
+
+        /* Menu Section */
+        .menu {
+            padding: 40px;
+            text-align: center;
+        }
+
+        .menu h2 {
+            margin-bottom: 20px;
+            font-size: 30px;
+            color: #d62828;
+        }
+
+        .menu-items {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .item {
+            background: white;
+            width: 250px;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+        }
+
+        .item img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .item h3 {
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .item p {
+            color: #555;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 40px;
+            text-align: center;
+            background: white;
+        }
+
+        .contact h2 {
+            color: #d62828;
+        }
+
+        .contact p {
+            font-size: 18px;
+            color: #444;
+        }
+
+        /* Footer */
+        footer {
+            background: #d62828;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <div class="navbar">
+        <h1>TasteBite</h1>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#menu">Menu</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </div>
+
+    <!-- HOME -->
+    <section class="hero" id="home">
+        Welcome to TasteBite!
+    </section>
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <h2>About Us</h2>
+        <p>
+            TasteBite Restaurant has been serving delicious and fresh meals since 2005.
+            We believe in providing high-quality dishes prepared with the finest ingredients.
+            Our chefs combine creativity and tradition to bring you unforgettable flavors.
+            Whether you're here for a quick bite or a family dinner, we promise a warm
+            and satisfying experience.
+        </p>
+    </section>
+
+    <!-- MENU -->
+    <section class="menu" id="menu">
+        <h2>Our Menu</h2>
+
+        <div class="menu-items">
+            <div class="item">
+                <img src="https://t3.ftcdn.net/jpg/00/94/92/10/360_F_94921053_Lc06uabhNtMNSKq6H5gBhZVDoI6nKjXW.jpg" alt="Burger">
+                <h3>Classic Burger</h3>
+                <p>Juicy beef patty with fresh lettuce & cheese.</p>
+            </div>
+
+            <div class="item">
+                <img src="" alt="Pasta">
+                <h3>Italian Pasta</h3>
+                <p>Rich creamy sauce with herbs and garlic.</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1553621042-f6e147245754" alt="Pizza">
+                <h3>Margherita Pizza</h3>
+                <p>Fresh mozzarella and basil on crispy dough.</p>
+            </div>
+
+            <div class="item">
+                <img src="https://images.unsplash.com/photo-1478145046317-39f10e56b5e9" alt="Salad">
+                <h3>Fresh Salad</h3>
+                <p>Crisp vegetables with a tangy dressing.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+        <h2>Contact Us</h2>
+        <p><strong>📍 Location:</strong> 123 Food Street, New City</p>
+        <p><strong>📞 Phone:</strong> +1 555-123-456</p>
+        <p><strong>✉ Email:</strong> info@tastebite.com</p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        © 2025 TasteBite Restaurant | All Rights Reserved
+    </footer>
+
+</body>
+</html>
